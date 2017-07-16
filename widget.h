@@ -2,6 +2,8 @@
 #define WIDGET_H
 
 #include <QWidget>
+#include <QPushButton>
+#include <QGridLayout>
 
 class Widget : public QWidget
 {
@@ -10,6 +12,26 @@ class Widget : public QWidget
 public:
     Widget(QWidget *parent = 0);
     ~Widget();
+
+private slots:
+    void changeAlive(){
+        QObject *senderObj = sender();
+        int i = senderObj->objectName().toInt();
+        (*buttons[i]).setText(is_alive(*buttons[i])?"":"*");
+    }
+
+private:
+    QWidget *window;
+    QGridLayout *layout;
+    QVector<QSharedPointer<QPushButton> > buttons;
+    int x, y;
+
+    bool is_alive(const QPushButton & _but) const
+    {
+        if (_but.text()!="")
+            return true;
+        return false;
+    }
 };
 
 #endif // WIDGET_H
