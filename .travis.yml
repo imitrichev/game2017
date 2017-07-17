@@ -2,4 +2,4 @@ before_install:
   - sudo apt-add-repository ppa:canonical-qt5-edgers/ubuntu1204-qt5 -y
   - sudo apt-get update
   - sudo apt-get install qtdeclarative5-dev -y
-script:  qmake game2017.pro
+script: /usr/lib/x86_64-linux-gnu/qt5/bin/qmake game2017.pro
