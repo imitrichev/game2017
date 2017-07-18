@@ -18,7 +18,7 @@ public:
 	virtual void apply (bool,int);
 };
 
-class rulelife: public rule {
+class RuleLife: public rule {
 public:
 	virtual void apply(bool,int);
 };
