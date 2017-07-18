@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-class Rull5{
+class Rule5{
 public:
     // lifest - текущее состояние клетки
     //kol - количество соседей
