@@ -9,19 +9,16 @@
 #include <iostream>
 using namespace std;
 #include <rule.h>
-class RuleLife{
-public:
-	bool apply(bool lifest, int kol){
-		if(lifest == true){
+bool RuleLife::apply(bool lifest, int kol){
+	if(lifest == true){
 			if ((kol != 2)&&(kol != 3)){
 				return false;
 			}
-	} else{
+	} else	{
 			if (kol == 3){
 				return true;
 			}
 		}
-		}
-};
+}
 
 
