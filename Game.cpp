@@ -11,7 +11,7 @@ using namespace std;
 void Create(){};
 void Start(){};
 void Update(){};
-int countALife(int x, int y){};
+int countALive(int x, int y){};
 int main() {
 
 	return 0;
