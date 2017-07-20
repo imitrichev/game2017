@@ -8,7 +8,7 @@
 
 #include <iostream>
 using namespace std;
-#include <rule.h>
+#include <Rule.h>
 bool RuleLife::apply(bool lifest, int kol){
 	if(lifest == true){
 			if ((kol != 2)&&(kol != 3)){
